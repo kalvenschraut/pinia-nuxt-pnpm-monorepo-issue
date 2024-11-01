@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "website1",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port=3010",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "3.7.1"
+  },
+  "dependencies": {
+    "@local/package": "workspace:^1.0.0",
+    "@pinia/nuxt": "0.6.0"
+  }
+}
