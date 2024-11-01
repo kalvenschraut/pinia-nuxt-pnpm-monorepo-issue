@@ -1,27 +1,11 @@
-# Scalable Nuxt 3 Monorepos with PNPM Workspaces
-READ MORE ABOUT THE ARTICLE FROM THIS LINK:
-[Vue School Article](https://vueschool.io/articles/vuejs-tutorials/scalable-nuxt-3-monorepos-with-pnpm-workspaces/)
-
-
-install packages:
+To see issue do
 ```shell
-pnpm i
-```
-
-start dev mode:
-```shell
-pnpm run -r dev
-```
-
-build applications:
-```shell
-pnpm run -r build
-```
-
-start specific application
-```shell
+pnpm install
 pnpm --filter website1 run dev
-pnpm --filter website2 run dev
 ```
 
-
+can then downgrade @pinia/nuxt to 0.5.5 and run same commands to see it working
+```shell
+pnpm update @pinia/nuxt@0.5.5 -r
+pnpm --filter website1 run dev
+```

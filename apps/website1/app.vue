@@ -1,6 +1,6 @@
 <template>
-  <div>{{ user.name }}</div>
+  <div>{{ userStore.user.name }}</div>
 </template>
 <script setup lang="ts">
-const user = useUserStore();
+const userStore = useUserStore();
 </script>
